@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--
+<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+
+
+<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/race[@deathActionWorkerClass = "DeathActionWorker_SmallExplosion"]/../</xpath>
+			<value>
+				 <bloodDef>Filth_Fuel</bloodDef>
+			</value>
+		</li>
+	</operations>
+</Operation>
+-->
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Boomalope"]/race</xpath>
+		<value>
+			<bloodDef>Filth_Fuel</bloodDef>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Boomrat"]/race</xpath>
+		<value>
+			<bloodDef>Filth_Fuel</bloodDef>
+		</value>
+</Operation>
+	
+
+
+</Patch>
